@@ -21,6 +21,12 @@
     <properties>
         <java.version>11</java.version>
     </properties>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/Emmsie/pet_clinic.git</developerConnection>
+        <!--tag>HEAD</tag-->
+    </scm>
+
     <dependencies>
 
 
@@ -38,6 +44,13 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <goal>install</goal>
                 </configuration>
             </plugin>
         </plugins>
