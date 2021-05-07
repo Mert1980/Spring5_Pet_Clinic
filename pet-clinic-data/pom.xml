@@ -3,7 +3,7 @@
     <parent>
         <artifactId>emmsie_pet_clinic</artifactId>
         <groupId>be.brussel</groupId>
-        <version>0.0.1</version>
+        <version>0.0.4-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -15,7 +15,6 @@
         <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
     </properties>
 
-    <version>0.0.1</version>
 
     <dependencies>
         <dependency>
@@ -53,6 +52,7 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -74,6 +74,7 @@
             </executions>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
 
 </project>

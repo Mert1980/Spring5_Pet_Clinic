@@ -14,48 +14,46 @@
     </parent>
     <groupId>be.brussel</groupId>
     <artifactId>emmsie_pet_clinic</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.4-SNAPSHOT</version>
     <name>emmsie_pet_clinic</name>
     <description>Pet clinic Project</description>
     <properties>
         <java.version>11</java.version>
     </properties>
 
-    <scm>
-        <developerConnection>scm:git:https://github.com/Emmsie/pet_clinic.git</developerConnection>
-        <tag>emmsie_pet_clinic-0.0.1</tag>
-  </scm>
-
-    <dependencies>
-
-
-    </dependencies>
 
     <build>
+        <pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
+                <!--configuration>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
-                </configuration>
+                </configuration-->
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5.3</version>
+                <!--version>2.5.3</version-->
                 <configuration>
                     <goals>install</goals>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
+        </pluginManagement>
     </build>
+
+    <scm>
+        <developerConnection>scm:git:https://github.com/Emmsie/pet_clinic.git</developerConnection>
+        <tag>emmsie_pet_clinic-0.0.1</tag>
+    </scm>
 
 </project>
