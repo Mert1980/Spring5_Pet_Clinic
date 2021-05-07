@@ -3,7 +3,7 @@
     <parent>
         <artifactId>emmsie_pet_clinic</artifactId>
         <groupId>be.brussel</groupId>
-        <version>0.0.4</version>
+        <version>0.0.3-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -65,13 +65,13 @@
                         </exclude>
                     </excludes>
                 </configuration>
-            <executions>
+            <!--executions>
                 <execution>
                     <goals>
                         <goal>repackage</goal>
                     </goals>
                 </execution>
-            </executions>
+            </executions-->
             </plugin>
         </plugins>
         </pluginManagement>
