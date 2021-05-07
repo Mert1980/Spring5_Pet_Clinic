@@ -14,7 +14,7 @@
     </parent>
     <groupId>be.intecbrussel</groupId>
     <artifactId>Spring5_Pet_Clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>Spring5_Pet_Clinic</name>
     <description>Demo project for Spring Boot</description>
     <properties>
@@ -52,6 +52,6 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/Mert1980/Spring5_Pet_Clinic.git</developerConnection>
-      <tag>Spring5_Pet_Clinic-0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
