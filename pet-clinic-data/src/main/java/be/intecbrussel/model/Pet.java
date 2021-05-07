@@ -1,4 +1,4 @@
-package be.intecbrussel.spring5_pet_clinic.model;
+package be.intecbrussel.model;
 
 import java.time.LocalDate;
 

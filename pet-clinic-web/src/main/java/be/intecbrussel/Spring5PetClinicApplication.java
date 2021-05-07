@@ -1,4 +1,4 @@
-package be.intecbrussel.spring5_pet_clinic;
+package be.intecbrussel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
