@@ -13,9 +13,9 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>be.brussel</groupId>
-    <artifactId>emmsie_pet_clinic</artifactId>
+    <artifactId>pet_clinic</artifactId>
     <version>0.0.3-SNAPSHOT</version>
-    <name>emmsie_pet_clinic</name>
+    <name>pet_clinic</name>
     <description>Pet clinic Project</description>
     <properties>
         <java.version>11</java.version>
