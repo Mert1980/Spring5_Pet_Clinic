@@ -3,7 +3,7 @@
     <parent>
         <artifactId>emmsie_pet_clinic</artifactId>
         <groupId>be.brussel</groupId>
-        <version>0.0.1</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -14,14 +14,14 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
 
         <dependency>
             <artifactId>pet-clinic-data</artifactId>
             <groupId>be.brussel</groupId>
-            <version>0.0.1</version>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
