@@ -97,10 +97,12 @@ public class DataLoader implements CommandLineRunner {
 
         Owner owner3 = Owner.builder().firstName("Mert").lastName("Demirok").address("Belgium")
                 .city("Leuven").telephone("1234567890").build();
+
         Pet mertsCat = Pet.builder().name("Tirmik").owner(owner3)
                 .birthDate(LocalDate.now()).petType(savedCatPetType).build();
 
         System.out.println("owner3 getPets " + owner3.getPets());
+        System.out.println("Owners address " + owner3.getAddress());
 
         owner3.getPets().add(mertsCat);
 
