@@ -15,12 +15,10 @@ import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyLong;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 class OwnerSDJpaServiceTest {
@@ -75,14 +73,31 @@ class OwnerSDJpaServiceTest {
     }
 
     @Test
+    void findByIdNotFound() {
+        when(ownerRepository.findById(anyLong())).thenReturn(Optional.empty());
+        Owner owner = ownerSDJpaService.findById(1L);
+        assertNull(owner);
+    }
+
+    @Test
     void save() {
+        when(ownerRepository.save(any(Owner.class))).thenReturn(returnOwner);
+        Owner owner = ownerSDJpaService.save(Owner.builder().build());
+        assertNotNull(owner);
+        assertEquals(LAST_NAME, owner.getLastName());
     }
 
     @Test
     void delete() {
+        ownerSDJpaService.delete(returnOwner);
+
+        // verify delete() method in ownerRepository is called once when delete() method in service is called
+        verify(ownerRepository, times(1)).delete(any());
     }
 
     @Test
     void deleteById() {
+        ownerSDJpaService.deleteById(1L);
+        verify(ownerRepository).deleteById(anyLong());
     }
 }
