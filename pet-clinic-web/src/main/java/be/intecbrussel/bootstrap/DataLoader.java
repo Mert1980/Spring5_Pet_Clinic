@@ -7,8 +7,9 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
-@Component // becomes a bean and is registered in spring context
+ // becomes a bean and is registered in spring context
 // when spring context is up, run method is executed
+@Component
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
